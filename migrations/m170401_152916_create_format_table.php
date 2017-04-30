@@ -27,6 +27,6 @@ class m170401_152916_create_format_table extends Migration
         $this->dropTable('{{%format}}');
     }
     return true;
-}
+    }
 }
 

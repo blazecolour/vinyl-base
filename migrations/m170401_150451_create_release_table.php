@@ -23,7 +23,7 @@ class m170401_150451_create_release_table extends Migration
             'id_label' => Schema::TYPE_INTEGER,
             'id_format' => Schema::TYPE_INTEGER
             ]);
-            $this -> addForeignKey(
+        $this -> addForeignKey(
             'fk-release-id_artist',
             'release',
             'id_artist',
@@ -31,7 +31,7 @@ class m170401_150451_create_release_table extends Migration
             'id_artist',
             'RESTRICT'
             );
-            $this -> addForeignKey(
+        $this -> addForeignKey(
             'fk-release-id_label',
             'release',
             'id_label',
@@ -39,7 +39,7 @@ class m170401_150451_create_release_table extends Migration
             'id_label',
             'RESTRICT'
             );
-            $this -> addForeignKey(
+        $this -> addForeignKey(
             'fk-release-id_format',
             'release',
             'id_format',
@@ -56,18 +56,18 @@ class m170401_150451_create_release_table extends Migration
     {
         if ($this->db->schema->getTableSchema('{{%release}}', true) !== null) {
             $this->dropTable('{{%release}}');
-             $this -> dropForeignKey(
-            'fk-release-id_artist',
-            'release'
-            );
-              $this -> dropForeignKey(
-            'fk-release-id_label',
-            'release'
-            );
             $this -> dropForeignKey(
-            'fk-release-id_format',
-            'release'
-            );
+                'fk-release-id_artist',
+                'release'
+                );
+            $this -> dropForeignKey(
+                'fk-release-id_label',
+                'release'
+                );
+            $this -> dropForeignKey(
+                'fk-release-id_format',
+                'release'
+                );
 
 
         }

@@ -30,6 +30,6 @@ class m170401_133748_create_artist_table extends Migration
         $this->dropTable('{{%artist}}');
     }
     return true;
-}
+    }
 }
 

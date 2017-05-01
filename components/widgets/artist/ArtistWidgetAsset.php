@@ -9,7 +9,7 @@ class ArtistWidgetAsset extends AssetBundle
 	public $sourcePath = '@app/components/widgets/artist/assets';
 
 	public $css = [
-	// 'css/artist.scss'
+	'css/artist.scss'
 	];
 
 	public $js = [

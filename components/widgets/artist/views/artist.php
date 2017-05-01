@@ -19,5 +19,4 @@ use yii\helpers\Html;
 				<img src="http://placehold.it/300x300?text=No+photo">
 			<?php endif; ?>
 		</div>
-		<div class="vinyl"></div>
 	</div>

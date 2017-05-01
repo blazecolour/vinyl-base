@@ -11,3 +11,5 @@ use app\components\widgets\artist\ArtistWidget;
 
 
 <?php endforeach; ?>
+
+<div class="vinyl"></div>
